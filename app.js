@@ -93,7 +93,7 @@ const userroute= require("./routes/user.js")
 
 
 app.get("/", (req,res)=>{
-    res.send("This is home!");
+    res.redirect("/listing");
 })
 app.use("/listing", listingroute);
 app.use("/listing/:id/reviews", reviewroute);
